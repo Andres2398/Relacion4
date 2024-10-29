@@ -26,7 +26,7 @@ public class Primo {
 
 			}
 		}
-		if (primo = true) {
+		if (primo == true) {
 			System.out.println(numero + " es primo");
 		} else {
 			System.out.println(numero + " no es primo");
