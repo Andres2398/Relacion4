@@ -19,31 +19,25 @@ public class feliz {
 		
 		
 		while ( seguir==true && feliz==false) {
+			cociente=0;
 			while(numero>0) {
-				
 				resto=numero%10;
-				
-				cociente += resto*resto;
-				
+				cociente += resto*resto;	//Sacar divisores y sumarlos en  consciente
 				numero/=10;
 		}
-			numero=cociente;
-			
-			if(cociente==1) {
+			if(cociente==1) {				// si el consciente es 1 es feliz
 				feliz = true;
 			}
-			else if(cociente<10) {
+			else if(cociente<10) {			//si consciente menor a 10 el numero no es feliz
 				seguir=false;
 			}
-			cociente=0;
-		
-			
+			numero=cociente;				//reset de valores	
 		}
 		if(feliz==true) {
 			System.out.println("feliz");
 		}
 		else {
-			System.out.println("no feliz");
+			System.out.println("no es feliz");
 		}
 		
 

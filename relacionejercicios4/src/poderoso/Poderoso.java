@@ -7,8 +7,6 @@ public class Poderoso {
 	public static void main(String[] args) {
 		
 		
-		//PREGUNTAR A JUAN CARLOS POR EL WHILE CON BREAK
-		
 		int numero = 0;
 		boolean poderoso = true;
 
@@ -21,7 +19,7 @@ public class Poderoso {
 				poderoso = false;
 			}
 		}
-
+		boolean parar=false;
 		boolean esdivisor = false;
 		int divisor = 0;
 		boolean divisorPrimo = true;
@@ -35,37 +33,40 @@ public class Poderoso {
 				esdivisor = true;
 
 			}
+			
+				while (j <= divisor / 2 && esdivisor == true) {
 
-			while (j <= divisor / 2 && esdivisor == true) {
+					if (divisor % j == 0) {					 // comprobar que los divisores son primos
+						divisorPrimo = false;
 
-				if (divisor % j == 0) {			 // comprobar que los divisores son primos
-					divisorPrimo = false;
-
+					}
+					j++;
 				}
-
-				if (divisorPrimo == true) { 		// calcular el divisor al cuadrado
+				if (divisorPrimo == true) { 				// calcular el divisor al cuadrado
 					potencia = divisor * divisor;
+				}
+				
+				while (potencia != 0 && parar==false) { 	// solo entrar si potencia es difente a 0
+															
+					if (numero % potencia == 0) {			// numero % primo^2
+
+						poderoso = true;
+						parar=true;
+
+					} else {
+						poderoso = false;
+						parar=true;
+
+					}
+					
 
 				}
-				j++;
+
 			}
 			
-			while (potencia != 0) { 			// solo entrar si potencia es difente a 0
-				if (numero % potencia == 0) {	// numero % primo^2
-
-					poderoso = true;
-
-				} else {
-					poderoso = false;
-
-				}
-				break;
-
-			}
-
 			i++;
 
-		}
+		
 
 		if (poderoso == true) {
 			System.out.println("es poderoso");

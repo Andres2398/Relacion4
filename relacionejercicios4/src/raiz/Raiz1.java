@@ -8,22 +8,19 @@ public class Raiz1 {
 				
 		
 		double numero=0;
-		double x0=0;
+		double x0=1;
 		double x1=0;
-		double x2=0;
-		double x3=0;
-		double x4=0;
 	
 		System.out.println("introduce un numero");
 		
 		Scanner sc = new Scanner(System.in);
 		numero = sc.nextDouble();
 		
-		x0=Math.sqrt(numero);
-		x1=(numero/2) * (numero + (2/numero));
-		x2=(numero/2) * (numero*1.5 + 2/(numero*1.5)); 
-		x3=(numero/2) * 
-		System.out.println(x2);
+		while(x1!=x0) {
+			x1= (numero/x0)+x0;
+			x1=x1/2;
+			x0=x1;
+		}
 		
 		
 		

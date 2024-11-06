@@ -21,10 +21,11 @@ public class Primo {
 			if (numero % i == 0) {
 				primo = false;
 
-			} else {
-				i++;
+			
+				
 
 			}
+			i++;	
 		}
 		if (primo == true) {
 			System.out.println(numero + " es primo");
