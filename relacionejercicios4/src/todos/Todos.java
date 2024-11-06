@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Todos {
 	
-	static boolean numero(int numero) {
+	static boolean primo(int numero) {
 		
 		boolean primo = true;
 		int i = 2;
@@ -19,8 +19,7 @@ public class Todos {
 			i++;	
 		}
 		
-		boolean esprimo;
-		return esprimo;
+		return primo;
 		
 	}
 	public static void main(String[] args) {
@@ -30,8 +29,15 @@ public class Todos {
 		Scanner sc = new Scanner(System.in);
 		numero = sc.nextInt();
 		
-		boolean esprimo = numero(numero); 	
-	
+		boolean primo = primo(numero); 	
+		
+		System.out.println("el numero es primo ? " + primo);
+		
+		
+		
+		
+		
+		
 	}
 
 	
