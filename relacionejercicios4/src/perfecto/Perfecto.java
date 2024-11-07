@@ -16,15 +16,15 @@ public class Perfecto {
 
 		}
 		int perfecto = 0;
-		for (int i = 1; i <= numero/2+1; i++) {
-			if (numero % i == 0) {
-				perfecto = perfecto +  i;
+		for (int i = 1; i <= numero/2+1; i++) {   
+			if (numero % i == 0) {							// comprobar si el numero es divisor
+				perfecto +=i;     							//sumar divisores
 
-			}
+			}	
 			
 		}
 
-		if (perfecto == numero) {
+		if (perfecto == numero) {							//comprobar si es perfecto
 
 			System.out.println(numero + " es perfecto");
 		} else {

@@ -16,17 +16,17 @@ public class Narcisista {
 		int resto = numero%10;
 		long comprobar = 0;
 		int ndigitos=0;
-		int digitos=numero;
+		int digito=numero;
 		
 		
-		while(digitos>0) {  		 //comprobar digitos
+		while(digito>0) {  		 //comprobar digitos
 			ndigitos++;
-			digitos/=10;
+			digito/=10;
 		}
-		digitos=numero;
+		digito=numero;
 		while (numero>0) {
-			digitos=numero%10;
-			comprobar+= Math.pow(digitos, ndigitos); //suma de los digitos y potencias
+			digito=numero%10;
+			comprobar+= Math.pow(digito, ndigitos); //suma de los digitos y potencias
 			numero/=10;
 			
 			

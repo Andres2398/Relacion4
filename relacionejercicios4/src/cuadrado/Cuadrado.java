@@ -11,8 +11,7 @@ public class Cuadrado {
 		
 		Scanner sc = new Scanner(System.in);
 		numero= sc.nextInt();
-		
-		
+	
 		for (int i = 1; i <=Math.sqrt(numero); i++) {
 			
 			if(i*i==numero) {

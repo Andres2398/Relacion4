@@ -12,7 +12,7 @@ public class Tabla1 {
 		Scanner sc = new Scanner(System.in);
 		numero = sc.nextInt();
 		while (numero<1){
-			System.out.println("Error \nDame un numero mayor a 0");
+			System.out.println("Error \n Dame un numero mayor a 0");
 			numero = sc.nextInt();
 			
 			
